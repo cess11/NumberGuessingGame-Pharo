@@ -1,3 +1,6 @@
+"
+Game about guessing numbers.
+"
 Class {
 	#name : 'NumberGuessingGame',
 	#superclass : 'Object',
@@ -9,10 +12,10 @@ Class {
 	#package : 'NumberGuessingGame'
 }
 
-{ #category : 'as yet unclassified' }
+{ #category : 'logical operations' }
 NumberGuessingGame >> guess: aNumber [
-	message := aNumber == correctNumber ifTrue: 'Win!' ifFalse: (aNumber > correctNumber ifTrue: 'Too high!' ifFalse: 'Too low!' ) 
-	
+		message := aNumber == correctNumber ifTrue: 'Win!' ifFalse: (aNumber > correctNumber ifTrue: 'Too high!' ifFalse: 'Too low!' ) 
+		
 ]
 
 { #category : 'initialization' }
